@@ -1,5 +1,6 @@
 package com.appwizards.flipit;
 
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -35,6 +36,7 @@ public class Result extends Fragment {
 
         pref = getActivity().getSharedPreferences("HighScore",0);
         editor= pref.edit();
+        Context context = getContext();
 
         bestEasyScore = pref.getInt(Constants.EASY_HIGH_KEY,22);
         bestHardScore = pref.getInt(Constants.HARD_HIGH_KEY,32);
@@ -52,6 +54,8 @@ public class Result extends Fragment {
                     .setPosition(-50f,
                             konfettiView.getWidth() + 500f, -50f, -50f)
                     .stream(400,5000L);
+                    MyDBHelper myDBHelper = new MyDBHelper(context);
+                    myDBHelper.addScore("Ukasha", b.get("Time").toString());
 
             new SoundPlayer(getContext()).playSound("winner.mp3");
 
