@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlLeaderboard"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Leaderboard"
-    android:padding="16dp">
+    android:background="@drawable/backgroundapp"
+    android:padding="16dp"
+    tools:context=".Leaderboard">
 
 
     <TextView
@@ -15,16 +17,16 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="19dp"
         android:layout_marginTop="24dp"
-        android:fontFamily="sans-serif-light"
-        android:textSize="30dp"
-        android:text="High Scores" />
+        android:fontFamily="@font/lato_bold"
+        android:text="High Scores"
+        android:textSize="30dp" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/textView"
+        android:layout_alignParentTop="true"
         android:layout_marginTop="99dp"
         android:text="Easy Level" />
 
@@ -32,8 +34,8 @@
         android:id="@+id/easylead"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/textView2"
+        android:layout_alignParentEnd="true"
         android:layout_marginEnd="19dp"
         android:text="0:" />
 
@@ -41,8 +43,8 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/textView"
+        android:layout_alignParentTop="true"
         android:layout_marginTop="152dp"
         android:text="Hard Level" />
 
@@ -53,4 +55,13 @@
         android:layout_alignStart="@+id/easylead"
         android:layout_alignTop="@+id/textView4"
         android:text="0:" />
+
+    <LinearLayout
+        android:id="@+id/llLeaderboard"
+        android:layout_width="373dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="33dp"
+        android:orientation="vertical"></LinearLayout>
+
 </RelativeLayout>

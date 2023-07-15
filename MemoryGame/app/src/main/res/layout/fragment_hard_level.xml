@@ -3,35 +3,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HardLevel"
-    android:padding="20dp">
+    android:background="@drawable/backgroundapp"
+    android:padding="20dp"
+    tools:context=".HardLevel">
 
     <TextView
+        android:id="@+id/bestHard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Best time : 0:"
-        android:fontFamily="sans-serif-light"
-        android:textColor="#000"
-        android:id="@+id/bestHard"
         android:layout_alignParentStart="true"
-        android:textSize="18dp"/>
+        android:fontFamily="sans-serif-light"
+        android:text="Best time : 0:"
+        android:textColor="#000"
+        android:textSize="18dp" />
 
     <TextView
+        android:id="@+id/hardlevelcounter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:text="Time : 0:15"
-        android:id="@+id/hardlevelcounter"
         android:fontFamily="sans-serif-light"
+        android:text="Time : 0:15"
         android:textColor="@color/colorAccent"
-        android:textSize="20dp"
-        />
+        android:textSize="20dp" />
 
 
     <android.support.v7.widget.RecyclerView
+        android:id="@+id/hardlevelview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:id="@+id/hardlevelview"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp" />
 </RelativeLayout>
