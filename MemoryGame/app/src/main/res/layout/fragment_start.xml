@@ -10,7 +10,7 @@
 
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="670dp">
+        android:layout_height="700dp">
 
         <TextView
             android:id="@+id/name"
@@ -97,16 +97,32 @@
             android:textColor="@android:color/black"
             android:textSize="20sp" />
 
+        <EditText
+            android:id="@+id/tvEnterName"
+            android:layout_width="264dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/instructions2"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/lato_italic"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:hint="Enter Player's Name" />
+
         <Button
             android:id="@+id/leaderboard"
             android:layout_width="264dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/instructions2"
             android:layout_centerInParent="true"
-            android:layout_marginTop="67dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140dp"
             android:background="@color/dark_pink"
             android:text="Leaderboard"
             android:textColor="@color/white" />
+
     </RelativeLayout>
 
 

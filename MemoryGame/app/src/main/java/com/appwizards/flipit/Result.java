@@ -55,7 +55,7 @@ public class Result extends Fragment {
                             konfettiView.getWidth() + 500f, -50f, -50f)
                     .stream(400,5000L);
                     MyDBHelper myDBHelper = new MyDBHelper(context);
-                    myDBHelper.addScore("Ukasha", b.get("Time").toString());
+                    myDBHelper.addScore(b.getString("Name"), b.get("Time").toString());
 
             new SoundPlayer(getContext()).playSound("winner.mp3");
 

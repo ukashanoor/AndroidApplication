@@ -1,5 +1,6 @@
 package com.appwizards.flipit;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
@@ -49,9 +50,15 @@ public class EasyLevel extends Fragment {
     Bundle b;
     private SharedPreferences pref;
     int pos, count, bestScore;
+    String name;
 
 
     public EasyLevel() {
+
+    }
+    @SuppressLint("ValidFragment")
+    public EasyLevel(String _name) {
+        this.name = _name;
         // Required empty public constructor
     }
 
@@ -119,6 +126,7 @@ public class EasyLevel extends Fragment {
                         b.putString("Data", "win");
                         long time = (Constants.EASY_TIME - millisUntilFinished)/ Constants.TIMER_INTERVAL;
                         b.putInt("Time", (int) time);
+                        b.putString("Name", name);
                         cancel();
                         this.onFinish();
                     }
