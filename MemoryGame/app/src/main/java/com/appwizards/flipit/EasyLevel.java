@@ -31,18 +31,18 @@ public class EasyLevel extends Fragment {
     private RecyclerView EasyLevelRecyclerView;
     public ArrayList<Integer> cards;
     public int CARDS[] = {
-                R.drawable.card1,
-                R.drawable.card2,
-                R.drawable.card3,
-                R.drawable.card4,
-                R.drawable.card5,
-                R.drawable.card6,
-                R.drawable.card1,
-                R.drawable.card2,
-                R.drawable.card3,
-                R.drawable.card4,
-                R.drawable.card5,
-                R.drawable.card6
+                R.drawable.n1,
+                R.drawable.n3,
+                R.drawable.n5,
+                R.drawable.n6,
+                R.drawable.n7,
+                R.drawable.n8,
+                R.drawable.n1,
+                R.drawable.n3,
+                R.drawable.n5,
+                R.drawable.n6,
+                R.drawable.n7,
+                R.drawable.n8
     };
     EasyFlipView flippedCard;
     public long RemainingTime;
